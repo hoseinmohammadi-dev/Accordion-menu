@@ -1,0 +1,76 @@
+  :root {
+            --primary: #4f46e5;
+            --bg: #f9fafb;
+            --text: #111827;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .accordion {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .acc-item {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .acc-title {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .acc-title:hover {
+            background: #f3f4f6;
+        }
+
+        .acc-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .acc-item.active .acc-icon {
+            transform: rotate(90deg);
+        }
+
+        .acc-content {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 20px;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #444;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .acc-item.active .acc-content {
+            padding: 15px 20px 25px;
+            max-height: 500px;
+        }
