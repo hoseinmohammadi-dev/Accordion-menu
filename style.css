@@ -56,21 +56,14 @@
             transition: transform 0.3s ease;
         }
 
-        .acc-item.active .acc-icon {
-            transform: rotate(90deg);
-        }
-
         .acc-content {
-            max-height: 0;
+            max-height: auto;
             overflow: hidden;
             padding: 0 20px;
             font-size: 15px;
             line-height: 1.6;
             color: #444;
-            transition: max-height 0.4s ease, padding 0.4s ease;
+            transition: 0.4s ease, padding 0.4s ease;
         }
 
-        .acc-item.active .acc-content {
-            padding: 15px 20px 25px;
-            max-height: 500px;
-        }
+        
