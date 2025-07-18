@@ -11,7 +11,7 @@ Click on each item to expand or collapse its content.
 
 ## 📸 Preview
 
-https://hoseinmohammadi-dev.github.io/Accordion-menu/
+👉 [Click here to view the live demo](https://hoseinmohammadi-dev.github.io/Accordion-menu/)
 
 ## 🔗 Links
 
